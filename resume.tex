@@ -23,7 +23,7 @@
 
 % serif
 % \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -106,7 +106,7 @@
 
 \begin{center}
     \textbf{\Huge \scshape Matt Dembiczak} \\ \vspace{1pt}
-    \small 724-454-7163 $|$ \href{mailto:dembiczakmatt@gmail.com}{\underline{dembiczakmatt@gmail.com}} $|$ 
+    \small 724-454-7163 $|$ \href{mailto:dembiczakmatt@gmail.com}{\underline{dembiczakmatt@gmail.com}} $|$
     \href{https://linkedin.com/in/mattdembiczak}{\underline{linkedin.com/in/mattdembiczak}} $|$
     \href{https://github.com/mojadem}{\underline{github.com/mojadem}}
 \end{center}
@@ -130,12 +130,16 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer Intern}{May 2024 -- Present}
+      {Software Engineer Intern}{May 2024 -- Aug 2024}
       {Khan Academy}{Remote}
       \resumeItemListStart
-        \resumeItem{TODO}
+        \resumeItem{Led the development of a speech-to-text feature launch for Khanmigo, an AI-powered tutor, by implementing a custom React hook to manage microphone access and interface with a REST endpoint that transcribes binary audio data using OpenAI's Whisper API}
+        \resumeItem{Drove an architecture decision document discussing ways of ensuring datastore consistency when new fields are added to models, resulting in a decision that affects the entire engineering organization}
+        \resumeItem{Streamlined the process of enabling language support for Khanmigo by consolidating logic into the backend and adding a GraphQL endpoint for retrieving the list of supported languages}
+        \resumeItem{Collaborated on the generation and handling of over 20,000 image descriptions for images missing alt-text using computer vision by parsing the generated data and uploading it to a production datastore}
+        \resumeItem{{\bf Skills:} Go, GraphQL, React, Typescript}
       \resumeItemListEnd
-      
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -150,14 +154,28 @@
       {Systems Software Engineer Intern}{May 2023 -- Aug 2023}
       {Hewlett Packard Enterprise}{Durham, NC}
       \resumeItemListStart
-        \resumeItem{TODO}
+        \resumeItem{Overhauled block storage nightly integration testing by containerizing testing environments}
+        \resumeItem{Reduced nightly testing setup time by 90\%, saving 80+ hours per day of testing time across all systems, by implementing a Continuous Integration pipeline that automatically builds and distributes Docker images capable of running integration tests}
+        \resumeItem{Adapted a full stack web application responsible for running and managing integration tests by modifying both the frontend and backend infrastructure to add support for containerized testing}
+        \resumeItem{{\bf Skills:} Docker, Vue.js, Python, MongoDB, Continuous Integration}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{Apr 2023 -- May 2023}
+      {Pennsylvania State University}{State College, PA}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented software interactions for Textural Threshold, an interactive exhibition on display at Venice Architecture Biennale 2023 in collaboration with professors at Penn State University}
+        \resumeItem{Automated the exhibition by interfacing a Python script with various hardware components and displaying exhibition results on a local web application using Flask}
+        \resumeItem{{\bf Skills:} Python, Flask, Arduino}
     \resumeItemListEnd
 
     \resumeSubheading
       {Research Programmer}{May 2021 -- Aug 2022}
       {University of Pittsburgh PHDL}{Remote}
       \resumeItemListStart
-        \resumeItem{TODO}
+        \resumeItem{Collaborated on a Python project that creates synthetic populations by interacting with the US Census API to retrieve and manipulate population data for iterative proportional fitting}
+        \resumeItem{Contributed to a C++ project that simulated epidemiological dynamics by reducing log file size using a modular class-based logging system}
+        \resumeItem{{\bf Skills:} Python, C++, Object Oriented Programming, REST APIs}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -167,9 +185,11 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{TODO} $|$ \emph{TODO}}{TODO}
+          {\textbf{RGB} $|$ \emph{JavaScript, WebGL, Three.js} $|$ \href{https://github.com/mojadem/rgb}{\underline{GitHub Repo}}}{2023-2024}
           \resumeItemListStart
-            \resumeItem{TODO}
+            \resumeItem{Developed a creative web application that investigates how computers store and and interpert images as data}
+            \resumeItem{Utilized Three.js and WebGL to filter a random image's color values and display them independently in a 3D UI}
+            \resumeItem{Displayed the project in the Golumbic Scholarship Exhibition as one of eleven students in the College of Arts and Architecture selected to create an installation}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -177,12 +197,12 @@
 
 %
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: TODO} \\
-    }}
- \end{itemize}
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: TODO} \\
+%     }}
+%  \end{itemize}
 
 
 %-------------------------------------------
