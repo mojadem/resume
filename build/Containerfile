@@ -9,8 +9,4 @@ RUN apt-get update -q && apt-get install -qy \
 
 WORKDIR /data
 
-COPY resume.tex .
-COPY compile.sh .
-RUN chmod +x compile.sh
-
-CMD ./compile.sh
+CMD ["bash", "build/compile.sh"]
