@@ -92,6 +92,8 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\link}[2]{\href{#1}{\underline{\smash{#2}}}}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -106,9 +108,10 @@
 
 \begin{center}
     \textbf{\Huge \scshape Matt Dembiczak} \\ \vspace{1pt}
-    \small 724-454-7163 $|$ \href{mailto:dembiczakmatt@gmail.com}{\underline{dembiczakmatt@gmail.com}} $|$
-    \href{https://linkedin.com/in/mattdembiczak}{\underline{linkedin.com/in/mattdembiczak}} $|$
-    \href{https://github.com/mojadem}{\underline{github.com/mojadem}}
+    \small 724-454-7163 $|$
+    \link{mailto:dembiczakmatt@gmail.com}{dembiczakmatt@gmail.com} $|$
+    \link{https://linkedin.com/in/mattdembiczak}{linkedin.com/in/mattdembiczak} $|$
+    \link{https://github.com/mojadem}{github.com/mojadem}
 \end{center}
 
 
@@ -120,7 +123,7 @@
       {B.S. in Computer Science, B.D in Digital Arts \& Media Design}{University Park, PA}
       \resumeItemListStart
         \resumeItem{3.97 GPA}
-        \resumeItem{ACM DevPSU Learning Captain, Teaching Assistant for DART 315: Game Studio}
+        \resumeItem{ACM DevPSU Learning Captain, TA for DART 315: Game Studio, Engineering Career Envoy}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -133,7 +136,7 @@
       {Software Engineer Intern}{May 2024 -- Aug 2024}
       {Khan Academy}{Remote}
       \resumeItemListStart
-        \resumeItem{Led the development of a speech-to-text feature launch for Khanmigo, an AI-powered tutor, by implementing a custom React hook to manage microphone access and interface with a REST endpoint that transcribes binary audio data using OpenAI's Whisper API}
+        \resumeItem{Led the development of a speech-to-text feature launch for Khanmigo, an AI-powered tutor, by implementing a custom React hook to manage microphone access and interface with a REST endpoint that transcribes audio data}
         \resumeItem{Drove an architecture decision document discussing ways of ensuring datastore consistency, resulting in a decision affecting the entire engineering organization, by inclusively collaborating and leading discussions}
         \resumeItem{Streamlined the process of enabling language support for Khanmigo by consolidating logic into the backend and adding a GraphQL endpoint for retrieving the list of supported languages}
         \resumeItem{Collaborated on the generation and handling of over 20,000 image descriptions for images missing alt-text using computer vision by parsing the generated data and uploading it to a production datastore}
@@ -174,7 +177,7 @@
       {University of Pittsburgh PHDL}{Remote}
       \resumeItemListStart
         \resumeItem{Collaborated on a Python project that creates synthetic populations by interacting with the US Census API to retrieve and manipulate population data for iterative proportional fitting}
-        \resumeItem{Contributed to a C++ project that simulated epidemiological dynamics by reducing log file size using a modular class-based logging system}
+        \resumeItem{Contributed to a C++ project that simulates epidemiological dynamics by reducing log file size using a modular class-based logging system}
         \resumeItem{{\bf Skills:} Python, C++, Object Oriented Programming, REST APIs}
       \resumeItemListEnd
 
@@ -185,7 +188,10 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{RGB} $|$ \emph{JavaScript, WebGL, Three.js} $|$ \href{https://github.com/mojadem/rgb}{\underline{GitHub Repo}}}{2023-2024}
+          {\textbf{RGB} $|$ \emph{JavaScript, WebGL, Three.js} $|$
+          \link{https://github.com/mojadem/rgb}{GitHub} $|$
+          \link{https://rgb-mojadem.vercel.app}{Website}}
+          {2023-2024}
           \resumeItemListStart
             \resumeItem{Developed a creative web application that investigates how computers store and interpret images as data}
             \resumeItem{Utilized Three.js and WebGL to filter a random image's color values and display them independently in a 3D UI}
